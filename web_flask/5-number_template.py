@@ -43,3 +43,6 @@ def display_number(n):
 def display_number_template(n):
     """sends a GET request to the number_template page"""
     return render_template('5-number.html', n=n)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000')

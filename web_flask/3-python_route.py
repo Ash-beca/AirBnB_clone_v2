@@ -31,3 +31,7 @@ def display_c(text):
 def display_python(text):
     """sends a GET request to the python page"""
     return ('Python %s' % escape(text.replace('_', ' ')))
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='5000')
+    
